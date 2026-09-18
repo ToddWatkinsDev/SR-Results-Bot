@@ -23,19 +23,17 @@ This bot uses slash commands. The main ones are:
 
 # Setup Process
 
-1. Put the bot token and SailRanks credentials in `.env`.
-2. Start the bot.
-3. In Discord, run `/setup`.
-4. Choose:
+1. In Discord, run `/setup`.
+2. Choose:
    - the signup channel
    - the results channel
    - the officer channel (optional)
    - the officer role (optional)
-5. Members run `/srid` to connect their SailRanks account.
-6. An officer runs `/race` with the regatta ID.
-7. Members use `/signup` to join the race.
-8. When results are ready, an officer runs `/results`.
-9. Use `/checkresults` to view standings.
+3. Members run `/srid` to connect their SailRanks account.
+4. An officer runs `/race` with the regatta ID.
+5. Members use `/signup` to join the race.
+6. When results are ready, an officer runs `/results`.
+7. Use `/checkresults` to view standings.
 
 ---
 
