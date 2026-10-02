@@ -49,3 +49,7 @@ This bot uses slash commands. The main ones are:
 ```
 
 This is the shortest normal workflow for running a race with the bot.
+
+## Help and Support
+
+All help and support for the app, maintenance schedules, and known issues can be found in the [SR-Results-Bot Discord support server](https://discord.gg/gTb7cMbAXk). Do not share personal or sensitive information in public channels.

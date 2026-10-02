@@ -1,12 +1,14 @@
 # Terms of Service
 
-**Last updated:** [18/09/2026]
+**Last updated:** 2 October 2026
 
-These Terms of Service ("Terms") govern your use of **SR-Results-Bot** (the "Bot"), a Discord bot operated by **ToddWatkinsDev** ("we," "us," or "our"). By inviting, accessing, or using the Bot, you agree to these Terms. If you do not agree, do not use the Bot or remove it from your server.
+These Terms of Service ("Terms") govern your use of **SR-Results-Bot** (the "Bot"), a Discord bot operated by the GitHub account **ToddWatkinsDev** ("we," "us," or "our"). The account name does not identify the operator's legal person or entity. By inviting, accessing, or using the Bot, you agree to these Terms. If you do not agree, do not use the Bot or remove it from your server.
 
 ## 1. What the Bot Does
 
- The Bot provides tools for Discord communities, including automated results handling, player creation, player registration, signup management, result submission, event or match administration, notifications, and other related features that we may add, change, or remove over time (the "Services").
+ The Bot provides tools for Discord communities to link a Discord user to a SailRanks player, create and link a SailRanks player for a user, configure server channels and officer roles, set an active regatta, manage signups and withdrawals, submit race results, and view standings. The Bot may also perform related notifications and server administration (the "Services"). The Bot's current commands include `/srid`, `/createsrid`, `/setup`, `/race`, `/signup`, `/withdraw`, `/results`, `/checkresults`, `/whois`, `/end`, and `/unlink`.
+
+ The Bot is currently provided free of charge. We may offer paid or subscription-based hosted services in the future. No fee applies unless we first provide the relevant pricing and terms and you choose to use or purchase that paid service. Any future paid service may be subject to additional terms, including details of fees, billing, cancellation, and service scope.
 
  The Bot is a community management tool. It does not guarantee the accuracy, completeness, or finality of any player, signup, match, event, or result data. Server staff remain responsible for reviewing and correcting information before relying on it.
 
@@ -33,6 +35,7 @@ These Terms of Service ("Terms") govern your use of **SR-Results-Bot** (the "Bot
 
  - the information you provide is accurate and not misleading;
  - you are authorized to submit or manage the information;
+ - before using a feature that connects to or uses SailRanks, you have read and agree to SailRanks' applicable terms, available from [SailRanks](https://sailranks.com);
  - you will not impersonate another person or create fraudulent, duplicate, or abusive records; and
  - your submission does not violate the rules of the relevant server, event, league, or competition.
 
@@ -54,54 +57,56 @@ These Terms of Service ("Terms") govern your use of **SR-Results-Bot** (the "Bot
 
 ## 6. Data and Privacy
 
- To provide the Services, the Bot may process information made available through Discord or submitted through Bot commands, including Discord user IDs, usernames, server IDs, channel or role IDs, player profiles, signup details, submitted results, timestamps, configuration settings, and usage or error logs.
+ Information users provide to the Bot generally includes game usernames, SailRanks IDs, and Discord usernames. To provide the Services, the Bot also processes Discord user IDs, server IDs, channel and role configuration IDs, country codes, regatta and signup details, submitted race positions and results, timestamps, server approval status and configuration IDs where applicable. It stores persistent records in CSV files under `SAILRANKS_DATA_DIR` (default: `data/`) on an operator-managed server in England. Its logs, written to the configured Python logging output (terminal by default), can contain user and server IDs, actions, player and regatta details, command inputs, exception details, available error codes, and, in dry-run mode, SailRanks write payloads. See the [Privacy Policy](https://github.com/ToddWatkinsDev/SR-Results-Bot/blob/main/PRIVACY.md) for details.
 
  We use this information to operate, secure, troubleshoot, improve, and support the Bot. We do not require sensitive personal information for normal use. Do not submit passwords, payment card details, government identification numbers, health information, or other sensitive data through the Bot.
 
  Server owners and administrators are responsible for their own collection and use of information through the Bot, including providing any notices or obtaining any consent required by law. Information posted in Discord may be visible to other server members and may be retained in backups, logs, or exported records.
 
- We may use service providers to host or maintain the Bot. We may disclose information when required by law, to protect rights and safety, or to investigate abuse. For questions or deletion requests, contact us through [GitHub Issues](https://github.com/ToddWatkinsDev/SR-Results-Bot/issues). Requests may require enough information to verify the request and may be subject to legal or operational retention requirements.
+ The Bot sends relevant player, signup, or result data to SailRanks when a feature requires it. We may disclose information when required by law, to protect rights and safety, or to investigate abuse. General help and support for the Bot, maintenance schedules, and known issues are available in the [SR-Results-Bot Discord support server](https://discord.gg/gTb7cMbAXk). For privacy requests or legal notices, send a private Discord message to **Jerseytbw** (user ID **422045346902966272**). Do not post personal information or legal notices in public support channels.
 
 ## 7. Ownership
 
  The Bot, its software, branding, documentation, and original content are owned by us or our licensors and are protected by applicable law. Subject to these Terms, we grant you a limited, non-exclusive, revocable, non-transferable right to use the Bot through Discord for its intended purpose.
 
- You retain ownership of content and data you submit, subject to the permissions needed for us to host, process, display, and transmit that data to provide the Services. You grant us a limited license to do so.
+ Submitting information to the Bot does not give you ownership of the Bot, its databases, or the records and outputs the Bot creates, stores, or organizes. We may process, store, and transmit submitted information as needed to provide and operate the Services, as described in these Terms and the Privacy Policy. This does not transfer or override rights that may belong to Discord, SailRanks, or another person, or limit any privacy rights that apply under law.
 
  Discord, its name, and its trademarks belong to Discord Inc. The Bot is not endorsed by or affiliated with Discord unless expressly stated.
 
 ## 8. Availability and Changes
 
- The Bot is provided on an "as is" and "as available" basis. We may perform maintenance, change features, impose limits, or discontinue some or all of the Services at any time. We do not promise uninterrupted, secure, or error-free operation, or that data will always be preserved.
+ The Bot and Services are provided on an "as is" and "as available" basis. You use them at your own risk. We do not promise that the Bot will be uninterrupted, secure, error-free, accurate, or that data will always be preserved. We may perform maintenance, change features, impose limits, or discontinue some or all of the Services at any time.
 
 ## 9. Disclaimers and Limitation of Liability
 
- To the maximum extent permitted by law, we disclaim all warranties, express or implied, including warranties of accuracy, availability, fitness for a particular purpose, merchantability, and non-infringement.
+ The Bot and its content are provided "as is" and without warranties or conditions of any kind, whether express or implied. To the fullest extent permitted by applicable law, we disclaim all warranties, including implied warranties of accuracy, availability, merchantability, and fitness for a particular purpose.
 
- To the maximum extent permitted by law, we will not be liable for indirect, incidental, special, consequential, exemplary, or punitive damages, or for lost data, revenue, reputation, opportunities, or competition results arising from or related to the Bot or these Terms. If liability cannot be excluded, our total liability for claims related to the Bot will not exceed the greater of **[AMOUNT]** or the amount you paid us for the Services during the preceding twelve months.
+ To the fullest extent permitted by applicable law, the operator and its moderators will not be liable for any loss or damage arising from or relating to access to, inability to access, or use of the Bot or Services. This includes any inaccuracy in information or results provided by the Bot; damage resulting from a fraudulent intrusion by a third party; damage to a device or system, including damage caused by a virus; and any direct or indirect loss arising from reliance on information provided by or through the Bot.
+
+ We may modify, suspend, or discontinue the Bot or any part of the Services at any time.
+
+ To the fullest extent permitted by applicable law, our total aggregate liability for all claims related to the Bot or these Terms is **£0**.
 
  Nothing in these Terms excludes or limits liability that cannot legally be excluded or limited.
 
 ## 10. Indemnity
 
- To the maximum extent permitted by law, you agree to defend, indemnify, and hold harmless **ToddWatkinsDev** and its affiliates, personnel, and service providers from claims, losses, liabilities, costs, and expenses arising from your misuse of the Bot, your violation of these Terms or Discord policies, your submitted data, or your violation of another person's rights.
+ To the maximum extent permitted by law, you agree to defend, indemnify, and hold harmless the operator and its affiliates, personnel, and service providers from claims, losses, liabilities, costs, and expenses arising from your misuse of the Bot, your violation of these Terms or Discord policies, your submitted data, or your violation of another person's rights. This clause requires legal review, including confirmation of the operator's identity and its suitability for the Bot's current free offering and any future paid service.
 
 ## 11. Suspension and Termination
 
- We may suspend or terminate access to the Bot, remove it from a server, or restrict features if we reasonably believe there is abuse, a security risk, a policy violation, non-payment where applicable, or a legal requirement. You may stop using the Bot at any time by removing it from your server and discontinuing access.
+ We may suspend or terminate access to the Bot, remove it from a server, or restrict features if we reasonably believe there is abuse, a security risk, a policy violation, non-payment for a paid service where applicable, or a legal requirement. You may stop using the Bot at any time by removing it from your server and discontinuing access. Cancellation terms for any future paid service will be provided with that service.
 
  Provisions that by their nature should survive termination, including ownership, data-related permissions, disclaimers, limitations of liability, indemnity, and dispute provisions, will survive termination.
 
 ## 12. Changes to These Terms
 
- We may update these Terms from time to time. We will post the updated version at **[TOS URL OR SUPPORT SERVER]** and update the "Last updated" date. Continued use of the Bot after an update becomes effective means you accept the revised Terms.
+ We may update these Terms from time to time. We will post the updated version at [https://github.com/ToddWatkinsDev/SR-Results-Bot/blob/main/TOS.md](https://github.com/ToddWatkinsDev/SR-Results-Bot/blob/main/TOS.md) and update the "Last updated" date. Continued use of the Bot after an update becomes effective means you accept the revised Terms.
 
 ## 13. Governing Law and Contact
 
- These Terms are governed by the laws of **England and Wales**, without regard to conflict-of-law principles. Any dispute will be handled by the courts of **England and Wales**, unless applicable law requires another forum.
+ These Terms and disputes between you and the Bot operator relating to the Bot are intended to be governed by the laws of **England and Wales**, without regard to conflict-of-law principles. The courts of **England and Wales** are intended to have jurisdiction over those disputes, unless applicable law requires another forum. This clause does not govern disputes between you and SailRanks or alter SailRanks' separate terms, which state that French law applies and disputes are subject to the courts within the jurisdiction of the Court of Appeal of Rennes, France. The enforceability of this clause requires legal review.
 
- Questions, support requests, and legal notices should be submitted through [GitHub Issues](https://github.com/ToddWatkinsDev/SR-Results-Bot/issues).
+ For help and support, maintenance schedules, and known issues, visit the [SR-Results-Bot Discord support server](https://discord.gg/gTb7cMbAXk). For privacy requests or legal notices, send a private Discord message to **Jerseytbw** (user ID **422045346902966272**); do not post them or personal information in public support channels.
 
 **By using SR-Results-Bot, you acknowledge that you have read and agree to these Terms.**
-
- > This template is for general informational purposes and is not legal advice. Replace the bracketed placeholders and have the final version reviewed for the operator's jurisdiction, business model, data practices, and the age of its users.
